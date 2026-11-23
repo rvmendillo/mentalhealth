@@ -97,19 +97,42 @@ struct CrisisLineRow: View {
         VStack(alignment: .leading, spacing: 8) {
             Text(line.name).font(.headline)
             Text(line.detail).font(.subheadline).foregroundStyle(.secondary)
-            FlowLayout(spacing: 10) {
+            HStack(spacing: 8) {
                 if let url = line.phoneURL {
-                    Link(destination: url) { Label("Call", systemImage: "phone.fill") }
-                        .buttonStyle(SecondaryButtonStyle(color: Palette.rose))
+                    Link(destination: url) {
+                        Label("Call", systemImage: "phone.fill")
+                            .labelStyle(.titleAndIcon)
+                            .lineLimit(1)
+                            .fixedSize()
+                    }
+                    .buttonStyle(SecondaryButtonStyle(color: Palette.rose))
+                    .accessibilityLabel("Call \(line.name)")
                 }
                 if let url = line.smsURL {
-                    Link(destination: url) { Label("Text", systemImage: "message.fill") }
-                        .buttonStyle(SecondaryButtonStyle(color: Palette.teal))
+                    Link(destination: url) {
+                        Label("Text", systemImage: "message.fill")
+                            .labelStyle(.titleAndIcon)
+                            .lineLimit(1)
+                            .fixedSize()
+                    }
+                    .buttonStyle(SecondaryButtonStyle(color: Palette.teal))
+                    .accessibilityLabel("Text \(line.name)")
                 }
                 if let url = line.websiteURL {
-                    Link(destination: url) { Label("Website", systemImage: "safari") }
-                        .buttonStyle(SecondaryButtonStyle(color: .secondary))
+                    Link(destination: url) {
+                        if line.phoneURL == nil && line.smsURL == nil {
+                            Label("Visit website", systemImage: "safari")
+                                .labelStyle(.titleAndIcon)
+                                .lineLimit(1)
+                                .fixedSize()
+                        } else {
+                            Image(systemName: "safari")
+                        }
+                    }
+                    .buttonStyle(SecondaryButtonStyle(color: .secondary))
+                    .accessibilityLabel("\(line.name) website")
                 }
+                Spacer(minLength: 0)
             }
         }
         .padding(.vertical, 4)

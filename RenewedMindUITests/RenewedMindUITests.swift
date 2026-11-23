@@ -303,6 +303,13 @@ final class RenewedMindUITests: XCTestCase {
         XCTAssertTrue(help.waitForExistence(timeout: 10))
         help.tap()
         XCTAssertTrue(element("crisis.list").waitForExistence(timeout: 10))
+        if anyElement(containing: "United States").exists {
+            let call988 = app.descendants(matching: .any)
+                .matching(NSPredicate(format: "label == %@", "Call 988 Suicide & Crisis Lifeline")).firstMatch
+            XCTAssertTrue(call988.waitForExistence(timeout: 5), "988 call button is shown")
+            XCTAssertTrue(call988.isHittable, "988 call button can be tapped")
+            XCTAssertGreaterThan(call988.frame.width, call988.frame.height, "button is a normal horizontal capsule")
+        }
         snap("19-Help")
         app.buttons["Done"].firstMatch.tap()
         let settings = element("today.settings")
