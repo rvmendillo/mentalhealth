@@ -133,8 +133,8 @@ final class RenewedMindUITests: XCTestCase {
         let balanced = element("result.balanced")
         reveal(balanced)
         snap("05-Reframe-Perspective")
-        let wordStudy = element("wordStudy")
-        reveal(wordStudy)
+        let fullStudy = app.buttons["Read the full word study"]
+        reveal(fullStudy)
         snap("06-Reframe-Scripture")
         let save = element("result.save")
         reveal(save)
@@ -228,14 +228,13 @@ final class RenewedMindUITests: XCTestCase {
         let row = element("affirmation.row.peace-isaiah-26-3")
         reveal(row)
         row.tap()
-        let study = element("wordStudy")
-        reveal(study)
-        let strongs = app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "H7965")).firstMatch
+        let strongs = app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "H7965")).firstMatch
+        reveal(strongs)
         XCTAssertTrue(strongs.exists, "Strong's number is shown")
         snap("15-Word-Study")
         app.navigationBars.buttons.element(boundBy: 0).tap()
         app.navigationBars.buttons.element(boundBy: 0).tap()
-        let etymologyLink = app.buttons.containing(NSPredicate(format: "label CONTAINS %@", "Healthy etymology")).firstMatch
+        let etymologyLink = app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "Healthy etymology")).firstMatch
         reveal(etymologyLink)
         etymologyLink.tap()
         XCTAssertTrue(element("etymology.health").waitForExistence(timeout: 10))

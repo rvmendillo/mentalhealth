@@ -152,6 +152,32 @@ final class ClaudeClientTests: XCTestCase {
         }
     }
 
+    func testRetriesWithoutFallbackBetaWhenRejected() async throws {
+        let transport = MockTransport([
+            .http(400, #"{"type":"error","error":{"type":"invalid_request_error","message":"Unexpected value(s) `server-side-fallback-2026-07-01` for the `anthropic-beta` header."}}"#, [:]),
+            .http(200, messageJSON(text: "ok"), [:]),
+        ])
+        let reply = try await client(transport).send(model: .opus55, system: "s", user: "u", schema: [:])
+        XCTAssertEqual(reply.text, "ok")
+        XCTAssertEqual(transport.requestCount, 2)
+        XCTAssertEqual(transport.body(at: 0)["fallbacks"] as? String, "default")
+        XCTAssertNil(transport.body(at: 1)["fallbacks"], "the retry drops the fallback parameter")
+        XCTAssertNil(transport.requests[1].value(forHTTPHeaderField: "anthropic-beta"))
+    }
+
+    func testOtherBadRequestsAreNotRetriedWithoutFallbacks() async {
+        let transport = MockTransport([
+            .http(400, #"{"type":"error","error":{"type":"invalid_request_error","message":"messages: text content blocks must be non-empty"}}"#, [:]),
+        ])
+        do {
+            _ = try await client(transport).send(model: .opus55, system: "s", user: "u", schema: [:])
+            XCTFail("expected bad request")
+        } catch {
+            XCTAssertEqual(error as? ClaudeError, .badRequest("messages: text content blocks must be non-empty"))
+            XCTAssertEqual(transport.requestCount, 1)
+        }
+    }
+
     func testReframerFallsBackFromFableToOpus() async throws {
         let transport = MockTransport([
             .http(404, #"{"type":"error","error":{"type":"not_found_error","message":"model not found"}}"#, [:]),

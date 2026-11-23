@@ -216,6 +216,7 @@ struct EtymologyCard: View {
                 VerseView(verse: verse, reference: reference, compact: true)
             }
         }
+        .accessibilityElement(children: .contain)
         .accessibilityIdentifier("etymology.\(etymology.id)")
     }
 }

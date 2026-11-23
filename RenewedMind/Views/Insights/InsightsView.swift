@@ -116,6 +116,7 @@ struct InsightsView: View {
                     Text("/ 100 · \(latest.band.title)")
                         .font(.subheadline.weight(.semibold))
                 }
+                .accessibilityElement(children: .combine)
                 .accessibilityIdentifier("insights.who5Score")
                 Text(latest.date.formatted(date: .abbreviated, time: .omitted))
                     .font(.caption)

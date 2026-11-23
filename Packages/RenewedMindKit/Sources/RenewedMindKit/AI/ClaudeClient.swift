@@ -157,7 +157,8 @@ public struct ClaudeClient: Sendable {
     }
 
     /// Builds the JSON body for a structured-output request.
-    public static func makeBody(model: ClaudeModel, system: String, user: String, schema: [String: Any]) -> [String: Any] {
+    public static func makeBody(model: ClaudeModel, system: String, user: String, schema: [String: Any],
+                                useFallbacks: Bool = true) -> [String: Any] {
         var body: [String: Any] = [
             "model": model.rawValue,
             "max_tokens": maxTokens,
@@ -172,13 +173,14 @@ public struct ClaudeClient: Sendable {
                 "format": ["type": "json_schema", "schema": schema] as [String: Any],
             ] as [String: Any],
         ]
-        if model.usesServerFallbacks {
+        if useFallbacks && model.usesServerFallbacks {
             body["fallbacks"] = "default"
         }
         return body
     }
 
-    public func makeRequest(model: ClaudeModel, system: String, user: String, schema: [String: Any]) throws -> URLRequest {
+    public func makeRequest(model: ClaudeModel, system: String, user: String, schema: [String: Any],
+                            useFallbacks: Bool = true) throws -> URLRequest {
         guard !apiKey.isEmpty else { throw ClaudeError.missingAPIKey }
         var request = URLRequest(url: Self.endpoint)
         request.httpMethod = "POST"
@@ -186,10 +188,10 @@ public struct ClaudeClient: Sendable {
         request.setValue("application/json", forHTTPHeaderField: "content-type")
         request.setValue(apiKey, forHTTPHeaderField: "x-api-key")
         request.setValue(Self.apiVersion, forHTTPHeaderField: "anthropic-version")
-        if model.usesServerFallbacks {
+        if useFallbacks && model.usesServerFallbacks {
             request.setValue(Self.fallbackBeta, forHTTPHeaderField: "anthropic-beta")
         }
-        let body = Self.makeBody(model: model, system: system, user: user, schema: schema)
+        let body = Self.makeBody(model: model, system: system, user: user, schema: schema, useFallbacks: useFallbacks)
         request.httpBody = try JSONSerialization.data(withJSONObject: body, options: [.sortedKeys])
         return request
     }
@@ -253,8 +255,23 @@ public struct ClaudeClient: Sendable {
     }
 
     /// Sends a structured-output request, retrying transient failures with backoff.
+    /// If the account rejects the server-side fallback beta, the request is retried once without it.
     public func send(model: ClaudeModel, system: String, user: String, schema: [String: Any]) async throws -> ClaudeReply {
-        let request = try makeRequest(model: model, system: system, user: user, schema: schema)
+        do {
+            return try await send(model: model, system: system, user: user, schema: schema, useFallbacks: true)
+        } catch ClaudeError.badRequest(let message) where model.usesServerFallbacks && Self.mentionsFallbackBeta(message) {
+            return try await send(model: model, system: system, user: user, schema: schema, useFallbacks: false)
+        }
+    }
+
+    static func mentionsFallbackBeta(_ message: String) -> Bool {
+        let lower = message.lowercased()
+        return lower.contains("anthropic-beta") || lower.contains("fallback")
+    }
+
+    private func send(model: ClaudeModel, system: String, user: String, schema: [String: Any],
+                      useFallbacks: Bool) async throws -> ClaudeReply {
+        let request = try makeRequest(model: model, system: system, user: user, schema: schema, useFallbacks: useFallbacks)
         var attempt = 0
         while true {
             do {

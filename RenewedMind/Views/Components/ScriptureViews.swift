@@ -63,6 +63,7 @@ struct WordStudyCard: View {
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
+        .accessibilityElement(children: .contain)
         .accessibilityIdentifier("wordStudy")
     }
 }

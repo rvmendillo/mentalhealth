@@ -130,10 +130,10 @@ struct BreathingSessionView: View {
                     .multilineTextAlignment(.center)
                     .padding(40)
                     .shadow(radius: 4)
-                    .accessibilityIdentifier("breathing.cue")
             }
             .accessibilityElement(children: .combine)
             .accessibilityLabel("Breathing guide. \(phaseLabel)")
+            .accessibilityIdentifier("breathing.cue")
 
             if isRunning {
                 Text(remainingText)
