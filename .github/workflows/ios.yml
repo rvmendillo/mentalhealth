@@ -1,0 +1,214 @@
+name: Build, test, and package
+
+on:
+  push:
+    branches: ["main", "claude/**"]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ios-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  content:
+    name: Verify Scripture and word-study content
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/cache@v4
+        with:
+          path: .content-cache
+          key: content-cache-v1
+      - name: Validate against BSB text, BSB interlinear, and Strong's
+        run: python3 Tools/validate_content.py
+
+  ios:
+    name: iOS 26 — package tests, UI tests, unsigned IPA
+    runs-on: macos-26
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: |
+          XCODE=$(ls -d /Applications/Xcode_26*.app | sort -V | tail -1)
+          sudo xcode-select -s "$XCODE"
+          xcodebuild -version
+          swift --version
+
+      - name: Core package tests (RenewedMindKit)
+        working-directory: Packages/RenewedMindKit
+        run: |
+          set -o pipefail
+          swift test 2>&1 | tee ../../package-tests.log | grep -E "error:|failed|Executed" || true
+          grep -q "with 0 failures" ../../package-tests.log
+          ! grep -q "error:" ../../package-tests.log
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Generate Xcode project
+        run: xcodegen generate
+
+      - name: Create iPhone simulator
+        id: sim
+        run: |
+          RUNTIME=$(xcrun simctl list runtimes -j | python3 -c "import json,sys; r=[x for x in json.load(sys.stdin)['runtimes'] if x['platform']=='iOS' and x['isAvailable']]; r.sort(key=lambda x: [int(p) for p in x['version'].split('.')]); print(r[-1]['identifier'])")
+          echo "runtime=$RUNTIME"
+          UDID=$(xcrun simctl create "CI iPhone 17 Pro" "iPhone 17 Pro" "$RUNTIME")
+          echo "udid=$UDID" >> "$GITHUB_OUTPUT"
+          xcrun simctl boot "$UDID" || true
+          xcrun simctl bootstatus "$UDID" -b || true
+
+      - name: Build and run UI tests
+        run: |
+          set -o pipefail
+          mkdir -p build
+          xcodebuild test \
+            -project RenewedMind.xcodeproj \
+            -scheme RenewedMind \
+            -destination "id=${{ steps.sim.outputs.udid }}" \
+            -resultBundlePath build/UITests.xcresult \
+            -parallel-testing-enabled NO \
+            2>&1 | tee build/test.log | grep -E "error:|warning: .*RenewedMind/|Test Case|Executed|\*\* TEST" || true
+          grep -q "\*\* TEST SUCCEEDED \*\*" build/test.log
+
+      - name: Export screenshots
+        if: always()
+        run: |
+          if [ -d build/UITests.xcresult ]; then
+            xcrun xcresulttool export attachments --path build/UITests.xcresult --output-path build/attachments || true
+            python3 scripts/export_screenshots.py build/attachments build/screenshots || true
+            ls build/screenshots || true
+          fi
+
+      - name: Archive (Release, unsigned)
+        run: |
+          set -o pipefail
+          xcodebuild archive \
+            -project RenewedMind.xcodeproj \
+            -scheme RenewedMind \
+            -configuration Release \
+            -destination "generic/platform=iOS" \
+            -archivePath build/RenewedMind.xcarchive \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" \
+            2>&1 | tee build/archive.log | grep -E "error:|\*\* ARCHIVE" || true
+          grep -q "\*\* ARCHIVE SUCCEEDED \*\*" build/archive.log
+
+      - name: Package IPA
+        run: |
+          rm -rf build/ipa && mkdir -p build/ipa/Payload
+          cp -R build/RenewedMind.xcarchive/Products/Applications/RenewedMind.app build/ipa/Payload/
+          (cd build/ipa && zip -qry ../RenewedMind-unsigned.ipa Payload)
+          ls -la build/RenewedMind-unsigned.ipa
+
+      - name: Verify IPA contents
+        run: |
+          set -e
+          APP=build/ipa/Payload/RenewedMind.app
+          plutil -p "$APP/Info.plist" | grep -E "CFBundleIdentifier|CFBundleDisplayName|CFBundleShortVersionString|MinimumOSVersion|CFBundleIcons"
+          lipo -info "$APP/RenewedMind"
+          test -f "$APP/Assets.car"
+          BUNDLE=$(find "$APP" -maxdepth 1 -name "*RenewedMindKit*.bundle" | head -1)
+          echo "resource bundle: $BUNDLE"
+          for f in affirmations practices citations etymologies; do test -s "$BUNDLE/$f.json" || test -s "$BUNDLE/Contents/Resources/$f.json"; done
+          echo "--- linked frameworks"
+          otool -L "$APP/RenewedMind" | grep -E "FoundationModels|SwiftUI|Charts" || true
+          echo "--- FoundationModels must be weak-linked so iOS 17/18 can launch"
+          otool -l "$APP/RenewedMind" | grep -B2 -A3 "FoundationModels" | tee build/weaklink.txt
+          grep -q "LC_LOAD_WEAK_DYLIB" build/weaklink.txt
+          unzip -l build/RenewedMind-unsigned.ipa | tail -3
+
+      - name: Upload IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: RenewedMind-unsigned-ipa
+          path: build/RenewedMind-unsigned.ipa
+          retention-days: 30
+
+      - name: Upload screenshots and logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ios26-test-results
+          path: |
+            build/screenshots
+            build/test.log
+            build/archive.log
+            package-tests.log
+          retention-days: 14
+
+      - name: Upload generated Xcode project
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-xcodeproj
+          path: |
+            RenewedMind.xcodeproj
+            RenewedMind/Info.plist
+          retention-days: 14
+
+  ios18:
+    name: iOS 18 compatibility — UI tests on an older OS
+    runs-on: macos-15
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode 26
+        run: |
+          XCODE=$(ls -d /Applications/Xcode_26*.app | sort -V | tail -1)
+          sudo xcode-select -s "$XCODE"
+          xcodebuild -version
+
+      - name: Install XcodeGen and generate project
+        run: |
+          brew install xcodegen
+          xcodegen generate
+
+      - name: Create iOS 18 simulator
+        id: sim
+        run: |
+          RUNTIME=$(xcrun simctl list runtimes -j | python3 -c "import json,sys; r=[x for x in json.load(sys.stdin)['runtimes'] if x['platform']=='iOS' and x['isAvailable'] and x['version'].startswith('18.')]; r.sort(key=lambda x: [int(p) for p in x['version'].split('.')]); print(r[-1]['identifier'])")
+          echo "runtime=$RUNTIME"
+          UDID=$(xcrun simctl create "CI iPhone 16 (iOS 18)" "iPhone 16" "$RUNTIME")
+          echo "udid=$UDID" >> "$GITHUB_OUTPUT"
+          xcrun simctl boot "$UDID" || true
+          xcrun simctl bootstatus "$UDID" -b || true
+
+      - name: UI tests on iOS 18
+        run: |
+          set -o pipefail
+          mkdir -p build
+          xcodebuild test \
+            -project RenewedMind.xcodeproj \
+            -scheme RenewedMind \
+            -destination "id=${{ steps.sim.outputs.udid }}" \
+            -resultBundlePath build/UITests18.xcresult \
+            -parallel-testing-enabled NO \
+            -only-testing:RenewedMindUITests/RenewedMindUITests/testOnboardingLeadsToToday \
+            -only-testing:RenewedMindUITests/RenewedMindUITests/testRenewThoughtProducesReframeAndSaves \
+            -only-testing:RenewedMindUITests/RenewedMindUITests/testBreathPrayerSessionAndFeedback \
+            -only-testing:RenewedMindUITests/RenewedMindUITests/testSettingsHelpAndScience \
+            2>&1 | tee build/test18.log | grep -E "error:|Test Case|Executed|\*\* TEST" || true
+          grep -q "\*\* TEST SUCCEEDED \*\*" build/test18.log
+
+      - name: Export screenshots
+        if: always()
+        run: |
+          if [ -d build/UITests18.xcresult ]; then
+            xcrun xcresulttool export attachments --path build/UITests18.xcresult --output-path build/attachments18 || true
+            python3 scripts/export_screenshots.py build/attachments18 build/screenshots18 || true
+          fi
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ios18-test-results
+          path: |
+            build/screenshots18
+            build/test18.log
+          retention-days: 14

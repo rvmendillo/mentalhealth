@@ -1,0 +1,443 @@
+[
+  {
+    "id": "seligman2005",
+    "authors": "Seligman, M. E. P., Steen, T. A., Park, N., & Peterson, C.",
+    "year": 2005,
+    "title": "Positive psychology progress: Empirical validation of interventions",
+    "source": "American Psychologist, 60(5), 410–421",
+    "doi": "10.1037/0003-066X.60.5.410",
+    "short": "Seligman et al., 2005"
+  },
+  {
+    "id": "emmons2003",
+    "authors": "Emmons, R. A., & McCullough, M. E.",
+    "year": 2003,
+    "title": "Counting blessings versus burdens: An experimental investigation of gratitude and subjective well-being in daily life",
+    "source": "Journal of Personality and Social Psychology, 84(2), 377–389",
+    "doi": "10.1037/0022-3514.84.2.377",
+    "short": "Emmons & McCullough, 2003"
+  },
+  {
+    "id": "lyubomirsky2005",
+    "authors": "Lyubomirsky, S., Sheldon, K. M., & Schkade, D.",
+    "year": 2005,
+    "title": "Pursuing happiness: The architecture of sustainable change",
+    "source": "Review of General Psychology, 9(2), 111–131",
+    "doi": "10.1037/1089-2680.9.2.111",
+    "short": "Lyubomirsky et al., 2005"
+  },
+  {
+    "id": "sheldon2006",
+    "authors": "Sheldon, K. M., & Lyubomirsky, S.",
+    "year": 2006,
+    "title": "How to increase and sustain positive emotion: The effects of expressing gratitude and visualizing best possible selves",
+    "source": "The Journal of Positive Psychology, 1(2), 73–82",
+    "doi": "10.1080/17439760500510676",
+    "short": "Sheldon & Lyubomirsky, 2006"
+  },
+  {
+    "id": "king2001",
+    "authors": "King, L. A.",
+    "year": 2001,
+    "title": "The health benefits of writing about life goals",
+    "source": "Personality and Social Psychology Bulletin, 27(7), 798–807",
+    "doi": "10.1177/0146167201277003",
+    "short": "King, 2001"
+  },
+  {
+    "id": "malouff2017",
+    "authors": "Malouff, J. M., & Schutte, N. S.",
+    "year": 2017,
+    "title": "Can psychological interventions increase optimism? A meta-analysis",
+    "source": "The Journal of Positive Psychology, 12(6), 594–604",
+    "doi": "10.1080/17439760.2016.1221122",
+    "short": "Malouff & Schutte, 2017"
+  },
+  {
+    "id": "curry2018",
+    "authors": "Curry, O. S., Rowland, L. A., Van Lissa, C. J., Zlotowitz, S., McAlaney, J., & Whitehouse, H.",
+    "year": 2018,
+    "title": "Happy to help? A systematic review and meta-analysis of the effects of performing acts of kindness on the well-being of the actor",
+    "source": "Journal of Experimental Social Psychology, 76, 320–329",
+    "doi": "10.1016/j.jesp.2018.02.014",
+    "short": "Curry et al., 2018"
+  },
+  {
+    "id": "dunn2008",
+    "authors": "Dunn, E. W., Aknin, L. B., & Norton, M. I.",
+    "year": 2008,
+    "title": "Spending money on others promotes happiness",
+    "source": "Science, 319(5870), 1687–1688",
+    "doi": "10.1126/science.1150952",
+    "short": "Dunn et al., 2008"
+  },
+  {
+    "id": "bryant2007",
+    "authors": "Bryant, F. B., & Veroff, J.",
+    "year": 2007,
+    "title": "Savoring: A new model of positive experience",
+    "source": "Lawrence Erlbaum Associates",
+    "doi": null,
+    "short": "Bryant & Veroff, 2007"
+  },
+  {
+    "id": "neff2013",
+    "authors": "Neff, K. D., & Germer, C. K.",
+    "year": 2013,
+    "title": "A pilot study and randomized controlled trial of the mindful self-compassion program",
+    "source": "Journal of Clinical Psychology, 69(1), 28–44",
+    "doi": "10.1002/jclp.21923",
+    "short": "Neff & Germer, 2013"
+  },
+  {
+    "id": "ferrari2019",
+    "authors": "Ferrari, M., Hunt, C., Harrysunker, A., Abbott, M. J., Beath, A. P., & Einstein, D. A.",
+    "year": 2019,
+    "title": "Self-compassion interventions and psychosocial outcomes: A meta-analysis of RCTs",
+    "source": "Mindfulness, 10(8), 1455–1473",
+    "doi": "10.1007/s12671-019-01134-6",
+    "short": "Ferrari et al., 2019"
+  },
+  {
+    "id": "zaccaro2018",
+    "authors": "Zaccaro, A., Piarulli, A., Laurino, M., Garbella, E., Menicucci, D., Neri, B., & Gemignani, A.",
+    "year": 2018,
+    "title": "How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing",
+    "source": "Frontiers in Human Neuroscience, 12, 353",
+    "doi": "10.3389/fnhum.2018.00353",
+    "short": "Zaccaro et al., 2018"
+  },
+  {
+    "id": "balban2023",
+    "authors": "Balban, M. Y., Neri, E., Kogon, M. M., Weed, L., Nouriani, B., Jo, B., Holl, G., Zeitzer, J. M., Spiegel, D., & Huberman, A. D.",
+    "year": 2023,
+    "title": "Brief structured respiration practices enhance mood and reduce physiological arousal",
+    "source": "Cell Reports Medicine, 4(1), 100895",
+    "doi": "10.1016/j.xcrm.2022.100895",
+    "short": "Balban et al., 2023"
+  },
+  {
+    "id": "singh2023",
+    "authors": "Singh, B., Olds, T., Curtis, R., et al.",
+    "year": 2023,
+    "title": "Effectiveness of physical activity interventions for improving depression, anxiety and distress: An overview of systematic reviews",
+    "source": "British Journal of Sports Medicine, 57(18), 1203–1209",
+    "doi": "10.1136/bjsports-2022-106195",
+    "short": "Singh et al., 2023"
+  },
+  {
+    "id": "noetel2024",
+    "authors": "Noetel, M., Sanders, T., Gallardo-Gómez, D., et al.",
+    "year": 2024,
+    "title": "Effect of exercise for depression: Systematic review and network meta-analysis of randomised controlled trials",
+    "source": "BMJ, 384, e075847",
+    "doi": "10.1136/bmj-2023-075847",
+    "short": "Noetel et al., 2024"
+  },
+  {
+    "id": "bull2020",
+    "authors": "Bull, F. C., Al-Ansari, S. S., Biddle, S., et al.",
+    "year": 2020,
+    "title": "World Health Organization 2020 guidelines on physical activity and sedentary behaviour",
+    "source": "British Journal of Sports Medicine, 54(24), 1451–1462",
+    "doi": "10.1136/bjsports-2020-102955",
+    "short": "Bull et al., 2020"
+  },
+  {
+    "id": "white2019",
+    "authors": "White, M. P., Alcock, I., Grellier, J., et al.",
+    "year": 2019,
+    "title": "Spending at least 120 minutes a week in nature is associated with good health and wellbeing",
+    "source": "Scientific Reports, 9, 7730",
+    "doi": "10.1038/s41598-019-44097-3",
+    "short": "White et al., 2019"
+  },
+  {
+    "id": "bratman2015",
+    "authors": "Bratman, G. N., Hamilton, J. P., Hahn, K. S., Daily, G. C., & Gross, J. J.",
+    "year": 2015,
+    "title": "Nature experience reduces rumination and subgenual prefrontal cortex activation",
+    "source": "Proceedings of the National Academy of Sciences, 112(28), 8567–8572",
+    "doi": "10.1073/pnas.1510459112",
+    "short": "Bratman et al., 2015"
+  },
+  {
+    "id": "holtlunstad2010",
+    "authors": "Holt-Lunstad, J., Smith, T. B., & Layton, J. B.",
+    "year": 2010,
+    "title": "Social relationships and mortality risk: A meta-analytic review",
+    "source": "PLoS Medicine, 7(7), e1000316",
+    "doi": "10.1371/journal.pmed.1000316",
+    "short": "Holt-Lunstad et al., 2010"
+  },
+  {
+    "id": "watson2015",
+    "authors": "Watson, N. F., Badr, M. S., Belenky, G., et al.",
+    "year": 2015,
+    "title": "Recommended amount of sleep for a healthy adult: A joint consensus statement of the American Academy of Sleep Medicine and Sleep Research Society",
+    "source": "Sleep, 38(6), 843–844",
+    "doi": "10.5665/sleep.4716",
+    "short": "Watson et al., 2015"
+  },
+  {
+    "id": "irish2015",
+    "authors": "Irish, L. A., Kline, C. E., Gunn, H. E., Buysse, D. J., & Hall, M. H.",
+    "year": 2015,
+    "title": "The role of sleep hygiene in promoting public health: A review of empirical evidence",
+    "source": "Sleep Medicine Reviews, 22, 23–36",
+    "doi": "10.1016/j.smrv.2014.10.001",
+    "short": "Irish et al., 2015"
+  },
+  {
+    "id": "pennebaker1986",
+    "authors": "Pennebaker, J. W., & Beall, S. K.",
+    "year": 1986,
+    "title": "Confronting a traumatic event: Toward an understanding of inhibition and disease",
+    "source": "Journal of Abnormal Psychology, 95(3), 274–281",
+    "doi": "10.1037/0021-843X.95.3.274",
+    "short": "Pennebaker & Beall, 1986"
+  },
+  {
+    "id": "frattaroli2006",
+    "authors": "Frattaroli, J.",
+    "year": 2006,
+    "title": "Experimental disclosure and its moderators: A meta-analysis",
+    "source": "Psychological Bulletin, 132(6), 823–865",
+    "doi": "10.1037/0033-2909.132.6.823",
+    "short": "Frattaroli, 2006"
+  },
+  {
+    "id": "koenig2015",
+    "authors": "Koenig, H. G., Pearce, M. J., Nelson, B., et al.",
+    "year": 2015,
+    "title": "Religious vs. conventional cognitive behavioral therapy for major depression in persons with chronic medical illness: A pilot randomized trial",
+    "source": "The Journal of Nervous and Mental Disease, 203(4), 243–251",
+    "doi": "10.1097/NMD.0000000000000273",
+    "short": "Koenig et al., 2015"
+  },
+  {
+    "id": "pearce2015",
+    "authors": "Pearce, M. J., Koenig, H. G., Robins, C. J., et al.",
+    "year": 2015,
+    "title": "Religiously integrated cognitive behavioral therapy: A new method of treatment for major depression in patients with chronic medical illness",
+    "source": "Psychotherapy, 52(1), 56–66",
+    "doi": "10.1037/a0036448",
+    "short": "Pearce et al., 2015"
+  },
+  {
+    "id": "anderson2015",
+    "authors": "Anderson, N., Heywood-Everett, S., Siddiqi, N., Wright, J., Meredith, J., & McMillan, D.",
+    "year": 2015,
+    "title": "Faith-adapted psychological therapies for depression and anxiety: Systematic review and meta-analysis",
+    "source": "Journal of Affective Disorders, 176, 183–196",
+    "doi": "10.1016/j.jad.2015.01.019",
+    "short": "Anderson et al., 2015"
+  },
+  {
+    "id": "ekers2014",
+    "authors": "Ekers, D., Webster, L., Van Straten, A., Cuijpers, P., Richards, D., & Gilbody, S.",
+    "year": 2014,
+    "title": "Behavioural activation for depression; an update of meta-analysis of effectiveness and sub group analysis",
+    "source": "PLoS ONE, 9(6), e100100",
+    "doi": "10.1371/journal.pone.0100100",
+    "short": "Ekers et al., 2014"
+  },
+  {
+    "id": "cuijpers2007",
+    "authors": "Cuijpers, P., van Straten, A., & Warmerdam, L.",
+    "year": 2007,
+    "title": "Behavioral activation treatments of depression: A meta-analysis",
+    "source": "Clinical Psychology Review, 27(3), 318–326",
+    "doi": "10.1016/j.cpr.2006.11.001",
+    "short": "Cuijpers et al., 2007"
+  },
+  {
+    "id": "wade2014",
+    "authors": "Wade, N. G., Hoyt, W. T., Kidwell, J. E. M., & Worthington, E. L., Jr.",
+    "year": 2014,
+    "title": "Efficacy of psychotherapeutic interventions to promote forgiveness: A meta-analysis",
+    "source": "Journal of Consulting and Clinical Psychology, 82(1), 154–170",
+    "doi": "10.1037/a0035268",
+    "short": "Wade et al., 2014"
+  },
+  {
+    "id": "sonnentag2007",
+    "authors": "Sonnentag, S., & Fritz, C.",
+    "year": 2007,
+    "title": "The Recovery Experience Questionnaire: Development and validation of a measure for assessing recuperation and unwinding from work",
+    "source": "Journal of Occupational Health Psychology, 12(3), 204–221",
+    "doi": "10.1037/1076-8998.12.3.204",
+    "short": "Sonnentag & Fritz, 2007"
+  },
+  {
+    "id": "hofmann2012",
+    "authors": "Hofmann, S. G., Asnaani, A., Vonk, I. J. J., Sawyer, A. T., & Fang, A.",
+    "year": 2012,
+    "title": "The efficacy of cognitive behavioral therapy: A review of meta-analyses",
+    "source": "Cognitive Therapy and Research, 36(5), 427–440",
+    "doi": "10.1007/s10608-012-9476-1",
+    "short": "Hofmann et al., 2012"
+  },
+  {
+    "id": "beck1979",
+    "authors": "Beck, A. T., Rush, A. J., Shaw, B. F., & Emery, G.",
+    "year": 1979,
+    "title": "Cognitive therapy of depression",
+    "source": "Guilford Press",
+    "doi": null,
+    "short": "Beck et al., 1979"
+  },
+  {
+    "id": "burns1980",
+    "authors": "Burns, D. D.",
+    "year": 1980,
+    "title": "Feeling good: The new mood therapy",
+    "source": "William Morrow",
+    "doi": null,
+    "short": "Burns, 1980"
+  },
+  {
+    "id": "topp2015",
+    "authors": "Topp, C. W., Østergaard, S. D., Søndergaard, S., & Bech, P.",
+    "year": 2015,
+    "title": "The WHO-5 Well-Being Index: A systematic review of the literature",
+    "source": "Psychotherapy and Psychosomatics, 84(3), 167–176",
+    "doi": "10.1159/000376585",
+    "short": "Topp et al., 2015"
+  },
+  {
+    "id": "goyal2014",
+    "authors": "Goyal, M., Singh, S., Sibinga, E. M. S., et al.",
+    "year": 2014,
+    "title": "Meditation programs for psychological stress and well-being: A systematic review and meta-analysis",
+    "source": "JAMA Internal Medicine, 174(3), 357–368",
+    "doi": "10.1001/jamainternmed.2013.13018",
+    "short": "Goyal et al., 2014"
+  },
+  {
+    "id": "khoury2013",
+    "authors": "Khoury, B., Lecomte, T., Fortin, G., et al.",
+    "year": 2013,
+    "title": "Mindfulness-based therapy: A comprehensive meta-analysis",
+    "source": "Clinical Psychology Review, 33(6), 763–771",
+    "doi": "10.1016/j.cpr.2013.05.005",
+    "short": "Khoury et al., 2013"
+  },
+  {
+    "id": "bolier2013",
+    "authors": "Bolier, L., Haverman, M., Westerhof, G. J., Riper, H., Smit, F., & Bohlmeijer, E.",
+    "year": 2013,
+    "title": "Positive psychology interventions: A meta-analysis of randomized controlled studies",
+    "source": "BMC Public Health, 13, 119",
+    "doi": "10.1186/1471-2458-13-119",
+    "short": "Bolier et al., 2013"
+  },
+  {
+    "id": "sin2009",
+    "authors": "Sin, N. L., & Lyubomirsky, S.",
+    "year": 2009,
+    "title": "Enhancing well-being and alleviating depressive symptoms with positive psychology interventions: A practice-friendly meta-analysis",
+    "source": "Journal of Clinical Psychology, 65(5), 467–487",
+    "doi": "10.1002/jclp.20593",
+    "short": "Sin & Lyubomirsky, 2009"
+  },
+  {
+    "id": "carr2021",
+    "authors": "Carr, A., Cullen, K., Keeney, C., et al.",
+    "year": 2021,
+    "title": "Effectiveness of positive psychology interventions: A systematic review and meta-analysis",
+    "source": "The Journal of Positive Psychology, 16(6), 749–769",
+    "doi": "10.1080/17439760.2020.1818807",
+    "short": "Carr et al., 2021"
+  },
+  {
+    "id": "sheldon2012",
+    "authors": "Sheldon, K. M., & Lyubomirsky, S.",
+    "year": 2012,
+    "title": "The challenge of staying happier: Testing the Hedonic Adaptation Prevention model",
+    "source": "Personality and Social Psychology Bulletin, 38(5), 670–680",
+    "doi": "10.1177/0146167212436400",
+    "short": "Sheldon & Lyubomirsky, 2012"
+  },
+  {
+    "id": "lyubomirsky2013",
+    "authors": "Lyubomirsky, S., & Layous, K.",
+    "year": 2013,
+    "title": "How do simple positive activities increase well-being?",
+    "source": "Current Directions in Psychological Science, 22(1), 57–62",
+    "doi": "10.1177/0963721412469809",
+    "short": "Lyubomirsky & Layous, 2013"
+  },
+  {
+    "id": "pressman2005",
+    "authors": "Pressman, S. D., & Cohen, S.",
+    "year": 2005,
+    "title": "Does positive affect influence health?",
+    "source": "Psychological Bulletin, 131(6), 925–971",
+    "doi": "10.1037/0033-2909.131.6.925",
+    "short": "Pressman & Cohen, 2005"
+  },
+  {
+    "id": "baumeister2001",
+    "authors": "Baumeister, R. F., Bratslavsky, E., Finkenauer, C., & Vohs, K. D.",
+    "year": 2001,
+    "title": "Bad is stronger than good",
+    "source": "Review of General Psychology, 5(4), 323–370",
+    "doi": "10.1037/1089-2680.5.4.323",
+    "short": "Baumeister et al., 2001"
+  },
+  {
+    "id": "jacka2017",
+    "authors": "Jacka, F. N., O'Neil, A., Opie, R., et al.",
+    "year": 2017,
+    "title": "A randomised controlled trial of dietary improvement for adults with major depression (the 'SMILES' trial)",
+    "source": "BMC Medicine, 15, 23",
+    "doi": "10.1186/s12916-017-0791-y",
+    "short": "Jacka et al., 2017"
+  },
+  {
+    "id": "firth2019",
+    "authors": "Firth, J., Marx, W., Dash, S., et al.",
+    "year": 2019,
+    "title": "The effects of dietary improvement on symptoms of depression and anxiety: A meta-analysis of randomized controlled trials",
+    "source": "Psychosomatic Medicine, 81(3), 265–280",
+    "doi": "10.1097/PSY.0000000000000673",
+    "short": "Firth et al., 2019"
+  },
+  {
+    "id": "vanderweele2016",
+    "authors": "VanderWeele, T. J., Li, S., Tsai, A. C., & Kawachi, I.",
+    "year": 2016,
+    "title": "Association between religious service attendance and lower suicide rates among US women",
+    "source": "JAMA Psychiatry, 73(8), 845–851",
+    "doi": "10.1001/jamapsychiatry.2016.1243",
+    "short": "VanderWeele et al., 2016"
+  },
+  {
+    "id": "waldinger2023",
+    "authors": "Waldinger, R., & Schulz, M.",
+    "year": 2023,
+    "title": "The good life: Lessons from the world's longest scientific study of happiness",
+    "source": "Simon & Schuster",
+    "doi": null,
+    "short": "Waldinger & Schulz, 2023"
+  },
+  {
+    "id": "thompson1933",
+    "authors": "Thompson, W. R.",
+    "year": 1933,
+    "title": "On the likelihood that one unknown probability exceeds another in view of the evidence of two samples",
+    "source": "Biometrika, 25(3/4), 285–294",
+    "doi": "10.2307/2332286",
+    "short": "Thompson, 1933"
+  },
+  {
+    "id": "russo2018",
+    "authors": "Russo, D. J., Van Roy, B., Kazerouni, A., Osband, I., & Wen, Z.",
+    "year": 2018,
+    "title": "A tutorial on Thompson sampling",
+    "source": "Foundations and Trends in Machine Learning, 11(1), 1–96",
+    "doi": "10.1561/2200000070",
+    "short": "Russo et al., 2018"
+  }
+]

@@ -1,0 +1,331 @@
+[
+  {
+    "id": "health",
+    "word": "Health · Whole · Holy",
+    "origin": "Health comes from Old English hǣlþ, “wholeness, being sound or well.” Holy comes from Old English hālig, which could mean both “holy” and “healthy, sound.”",
+    "root": "Both grow from a Proto-Germanic word meaning “healthy, whole” (*hailaz).",
+    "related": [
+      "whole",
+      "hale",
+      "heal",
+      "holy"
+    ],
+    "insight": "In English, health, wholeness, and holiness share one family tree. Holistic wellness isn't a new idea: to be healthy is to be made whole — body, mind, relationships, and spirit.",
+    "reference": "3 John 1:2",
+    "verse": "Beloved, I pray that in every way you may prosper and enjoy good health, as your soul also prospers."
+  },
+  {
+    "id": "salvation",
+    "word": "Salvation · Safe",
+    "origin": "Salvation comes from Latin salvātiō; safe comes through Old French sauf from Latin salvus, “whole, safe.”",
+    "root": "Latin salvus, “whole, safe, unharmed.”",
+    "related": [
+      "safe",
+      "salvage",
+      "save"
+    ],
+    "insight": "Before English borrowed “salvation,” Old English often used hǣlu — from the same family as “health.” The Greek sōzō works the same way, meaning saved, healed, or made whole (Mark 5:34).",
+    "reference": "Mark 5:34",
+    "verse": "“Daughter,” said Jesus, “your faith has healed you. Go in peace and be free of your affliction.”"
+  },
+  {
+    "id": "comfort",
+    "word": "Comfort",
+    "origin": "From Late Latin confortāre, “to strengthen greatly,” from con- and fortis, “strong.”",
+    "root": "Latin fortis, “strong” — as in fortitude and fortify.",
+    "related": [
+      "fortitude",
+      "fortify"
+    ],
+    "insight": "Comfort originally meant to make strong, not merely to soothe. God's comfort strengthens you for the road ahead, and the Greek paraklēsis adds that He comes alongside you to do it.",
+    "reference": "2 Corinthians 1:3–4",
+    "verse": "Blessed be the God and Father of our Lord Jesus Christ, the Father of compassion and the God of all comfort, who comforts us in all our troubles, so that we can comfort those in any trouble with the comfort we ourselves have received from God."
+  },
+  {
+    "id": "courage",
+    "word": "Courage · Encourage",
+    "origin": "Courage comes through Old French corage from Latin cor, “heart.” To encourage is literally to put heart into someone.",
+    "root": "Latin cor, “heart” — distantly related to cardiac, through Greek, from the same ancient root.",
+    "related": [
+      "encourage",
+      "cordial",
+      "cardiac"
+    ],
+    "insight": "Courage is a matter of the heart. When you encourage someone, you give them heart — which is what Jesus does when He says, “Take courage.”",
+    "reference": "John 16:33",
+    "verse": "I have told you these things so that in Me you may have peace. In the world you will have tribulation. But take courage; I have overcome the world!"
+  },
+  {
+    "id": "anxiety",
+    "word": "Anxiety",
+    "origin": "From Latin anxius, from angere, “to choke, squeeze, cause pain.”",
+    "root": "An ancient root meaning tight or painfully constricted — the same family as anguish (from Latin angustia, “narrowness, distress”), anger, and angst.",
+    "related": [
+      "anguish",
+      "anger",
+      "angst"
+    ],
+    "insight": "Anxiety is, at its root, a feeling of tightness — often felt in the chest and breath. Slow breathing gently loosens what anxiety constricts, and Scripture invites you to cast the weight on God.",
+    "reference": "1 Peter 5:7",
+    "verse": "Cast all your anxiety on Him, because He cares for you."
+  },
+  {
+    "id": "spirit",
+    "word": "Spirit · Inspire",
+    "origin": "Spirit comes from Latin spīritus, “breath, spirit,” from spīrāre, “to breathe.” Inspire is literally “to breathe into.”",
+    "root": "Latin spīrāre, “to breathe” — also behind respiration and expire.",
+    "related": [
+      "inspire",
+      "respiration",
+      "expire"
+    ],
+    "insight": "In Hebrew (ruach) and Greek (pneuma), the words for spirit also mean breath or wind. Every breath can remind you that God's Spirit gives you life.",
+    "reference": "Job 33:4",
+    "verse": "The Spirit of God has made me, and the breath of the Almighty gives me life."
+  },
+  {
+    "id": "happy",
+    "word": "Happy · Blessed",
+    "origin": "Happy is related to hap, an old word for chance or luck, as in happen and perhaps.",
+    "root": "Middle English hap, “chance, fortune.”",
+    "related": [
+      "happen",
+      "perhaps",
+      "mishap"
+    ],
+    "insight": "English happiness leans on luck. The Hebrew “blessed” in Psalm 1:1 (ashrei, “how happy!”) is linked by Strong's to a root meaning to go straight or advance — joy that comes from walking a good path, not from chance.",
+    "reference": "Psalm 1:1",
+    "verse": "Blessed is the man who does not walk in the counsel of the wicked, or set foot on the path of sinners, or sit in the seat of mockers."
+  },
+  {
+    "id": "kind",
+    "word": "Kind · Kindness",
+    "origin": "From Old English gecynde, “natural, native,” from the same family of words as kin.",
+    "root": "Proto-Germanic words for nature, race, and kin.",
+    "related": [
+      "kin",
+      "kindred"
+    ],
+    "insight": "Kindness is treating people like family. In Christ you are part of God's family, and kindness is the family resemblance.",
+    "reference": "Ephesians 4:32",
+    "verse": "Be kind and tenderhearted to one another, forgiving each other just as in Christ God forgave you."
+  },
+  {
+    "id": "compassion",
+    "word": "Compassion",
+    "origin": "From Late Latin compassiō, from compatī, “to suffer together with” — com-, “with,” and patī, “to suffer.”",
+    "root": "Latin patī, “to suffer, endure” — the same root as patience and passion.",
+    "related": [
+      "patience",
+      "passion"
+    ],
+    "insight": "Hebrew paints its own picture: rachamim (compassion) is related to the word for womb. Self-compassion means letting God's tender mercy reach you, too.",
+    "reference": "Lamentations 3:22",
+    "verse": "Because of the loving devotion of the LORD we are not consumed, for His mercies never fail."
+  },
+  {
+    "id": "patience",
+    "word": "Patience",
+    "origin": "From Latin patientia, “suffering, endurance, patience,” from patī, “to suffer, endure, wait.”",
+    "root": "Latin patī.",
+    "related": [
+      "patient",
+      "compassion",
+      "passion"
+    ],
+    "insight": "The New Testament word hupomonē (Romans 5:3) means “remaining under” — not passive waiting, but steady, hopeful endurance under a load.",
+    "reference": "Romans 5:3",
+    "verse": "Not only that, but we also rejoice in our sufferings, because we know that suffering produces perseverance;"
+  },
+  {
+    "id": "resilience",
+    "word": "Resilience",
+    "origin": "From Latin resilīre, “to spring back, rebound.”",
+    "root": "Latin re-, “back,” and salīre, “to leap.”",
+    "related": [
+      "resilient"
+    ],
+    "insight": "Resilience isn't never falling; it's springing back. Paul describes it honestly: “struck down, but not destroyed.”",
+    "reference": "2 Corinthians 4:8–9",
+    "verse": "We are hard pressed on all sides, but not crushed; perplexed, but not in despair; persecuted, but not forsaken; struck down, but not destroyed."
+  },
+  {
+    "id": "relax",
+    "word": "Relax",
+    "origin": "From Latin relaxāre, “to loosen, open,” from re-, “back,” and laxāre, “to loosen.”",
+    "root": "Latin laxus, “loose, free.”",
+    "related": [
+      "lax",
+      "release"
+    ],
+    "insight": "The Hebrew behind “Be still” in Psalm 46:10 (raphah) also means to let go or loosen. Relaxing your grip can be an act of trust.",
+    "reference": "Psalm 46:10",
+    "verse": "“Be still and know that I am God; I will be exalted among the nations, I will be exalted over the earth.”"
+  },
+  {
+    "id": "peace",
+    "word": "Peace",
+    "origin": "Through Old French pais from Latin pāx, “peace,” from an ancient root meaning “to fasten.”",
+    "root": "The same root as pact — peace as a bond that holds things together.",
+    "related": [
+      "pact",
+      "pacify"
+    ],
+    "insight": "Hebrew shalom goes further still: completeness, wholeness, well-being. Biblical peace isn't just a ceasefire; it's everything being made whole.",
+    "reference": "Isaiah 26:3",
+    "verse": "You will keep in perfect peace the steadfast of mind, because he trusts in You."
+  },
+  {
+    "id": "grace",
+    "word": "Grace · Gratitude",
+    "origin": "Grace comes from Latin grātia, “kindness, favor, esteem”; gratitude from Medieval Latin grātitūdō, “thankfulness.” Both come from Latin grātus, “pleasing, thankful.”",
+    "root": "Latin grātus.",
+    "related": [
+      "grateful",
+      "gratis",
+      "gracious"
+    ],
+    "insight": "Gratitude is grace noticed. Greek makes the same link: eucharistia (thanksgiving) is built from eu, “well,” and the family of charis, “grace.”",
+    "reference": "Colossians 2:7",
+    "verse": "rooted and built up in Him, established in the faith as you were taught, and overflowing with thankfulness."
+  },
+  {
+    "id": "worship",
+    "word": "Worship",
+    "origin": "From Old English weorþscipe — worth plus -ship: “worthiness, honor.”",
+    "root": "Old English weorþ, “worth.”",
+    "related": [
+      "worth",
+      "worthy"
+    ],
+    "insight": "To worship is to declare worth. You ascribe ultimate worth to God — and this God showed how much you are worth to Him.",
+    "reference": "Romans 5:8",
+    "verse": "But God proves His love for us in this: While we were still sinners, Christ died for us."
+  },
+  {
+    "id": "mind",
+    "word": "Mind",
+    "origin": "From Old English gemynd, “mind, memory, remembrance.”",
+    "root": "An ancient root meaning “to think” — related to Latin mēns, “mind.”",
+    "related": [
+      "remind",
+      "mental"
+    ],
+    "insight": "The English mind began as a place of remembering. Renewing your mind includes choosing what you remember: “do not forget all His kind deeds.”",
+    "reference": "Psalm 103:2",
+    "verse": "Bless the LORD, O my soul, and do not forget all His kind deeds"
+  },
+  {
+    "id": "disciple",
+    "word": "Disciple · Discipline",
+    "origin": "Disciple comes from Latin discipulus, “pupil, learner,” and discipline from disciplina, “instruction.”",
+    "root": "Latin words for learning and instruction.",
+    "related": [
+      "discipline"
+    ],
+    "insight": "Discipline is about learning, not punishment. The Greek mathētēs (disciple) also means “learner,” and Jesus invites you to “learn from Me.”",
+    "reference": "Matthew 11:29",
+    "verse": "Take My yoke upon you and learn from Me, for I am gentle and humble in heart, and you will find rest for your souls."
+  },
+  {
+    "id": "gospel",
+    "word": "Gospel",
+    "origin": "From Old English godspel, generally explained as gōd spel, “good news” — a translation of the Greek euangelion, “good message.”",
+    "root": "Old English spel, “story, message.”",
+    "related": [
+      "evangel",
+      "evangelism"
+    ],
+    "insight": "The heart of the Christian faith is literally good news. A renewed mind begins by hearing good news from God about yourself.",
+    "reference": "Romans 8:1",
+    "verse": "Therefore, there is now no condemnation for those who are in Christ Jesus."
+  },
+  {
+    "id": "enthusiasm",
+    "word": "Enthusiasm",
+    "origin": "From Greek enthousiasmos, from entheos, “inspired, filled with a god” — en, “in,” and theos, “god.”",
+    "root": "Greek theos, “god.”",
+    "related": [
+      "theology"
+    ],
+    "insight": "Enthusiasm once meant God within. Healthy energy and joy for life can be signs of God's Spirit at work in you.",
+    "reference": "Romans 15:13",
+    "verse": "Now may the God of hope fill you with all joy and peace as you believe in Him, so that you may overflow with hope by the power of the Holy Spirit."
+  },
+  {
+    "id": "sincere",
+    "word": "Sincere (a myth-buster)",
+    "origin": "From Latin sincērus, “genuine, pure, whole.”",
+    "root": "Probably from ancient roots meaning “one growth” — of a single, unmixed kind.",
+    "related": [
+      "sincerity"
+    ],
+    "insight": "You may have heard that sincere means “without wax” (sine cēra), from sculptors hiding cracks with wax. That's a popular myth, not the real history. Healthy word study loves truth in the details and lets context, not clever stories, decide meaning.",
+    "reference": "Philippians 4:8",
+    "verse": "Finally, brothers, whatever is true, whatever is honorable, whatever is right, whatever is pure, whatever is lovely, whatever is admirable—if anything is excellent or praiseworthy—think on these things."
+  },
+  {
+    "id": "forgive",
+    "word": "Forgive",
+    "origin": "From Old English forgiefan, built from for- and give. In early Germanic it meant “to give away, give up, release.”",
+    "root": "Proto-Germanic *fragebaną, “to give away; release; forgive.”",
+    "related": [
+      "give",
+      "forgiveness"
+    ],
+    "insight": "Forgiveness is a kind of giving: releasing a debt completely. The Greek aphiēmi means “to send away,” and charizomai means “to give freely as grace.”",
+    "reference": "Colossians 3:13",
+    "verse": "Bear with one another and forgive any complaint you may have against someone else. Forgive as the Lord forgave you."
+  },
+  {
+    "id": "integrity",
+    "word": "Integrity",
+    "origin": "From Latin integritās, “soundness, wholeness,” from integer, “whole, intact.”",
+    "root": "Latin integer — as in integer and integrate.",
+    "related": [
+      "integer",
+      "integrate",
+      "entire"
+    ],
+    "insight": "Integrity is being whole rather than divided. James describes the opposite: the “double-minded” (literally “two-souled”) person. A renewed mind moves toward wholeness.",
+    "reference": "James 1:8",
+    "verse": "He is a double-minded man, unstable in all his ways."
+  },
+  {
+    "id": "joy",
+    "word": "Joy",
+    "origin": "Through Old French joie from Latin gaudium, “joy,” from gaudēre, “to be glad, rejoice.”",
+    "root": "Latin gaudēre.",
+    "related": [
+      "enjoy",
+      "rejoice"
+    ],
+    "insight": "The Greek chara (joy) shares its root with charis (grace). Joy grows where grace is received.",
+    "reference": "John 15:11",
+    "verse": "I have told you these things so that My joy may be in you and your joy may be complete."
+  },
+  {
+    "id": "amen",
+    "word": "Amen",
+    "origin": "From Hebrew 'amen, “surely, truly,” from the root 'aman, “to support, be firm, be faithful.”",
+    "root": "Hebrew 'aman — the same root as emunah, “faithfulness.”",
+    "related": [
+      "emunah (faithfulness)"
+    ],
+    "insight": "The same root gives “great is Your faithfulness” in Lamentations 3:23. Saying amen is leaning your weight on Someone reliable.",
+    "reference": "Lamentations 3:22–23",
+    "verse": "Because of the loving devotion of the LORD we are not consumed, for His mercies never fail. They are new every morning; great is Your faithfulness!"
+  },
+  {
+    "id": "sabbath",
+    "word": "Sabbath",
+    "origin": "From Hebrew shabbat, from shavat, “to cease, rest.”",
+    "root": "Hebrew shavat, “to stop, rest.”",
+    "related": [
+      "sabbatical"
+    ],
+    "insight": "Sabbath is a rhythm of ceasing. Jesus said the Sabbath was made for people: rest is a gift for your good, not a test of your worth.",
+    "reference": "Mark 2:27",
+    "verse": "The Sabbath was made for man, not man for the Sabbath."
+  }
+]

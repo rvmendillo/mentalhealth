@@ -1,0 +1,652 @@
+[
+  {
+    "id": "breath-prayer",
+    "title": "Breath Prayer",
+    "subtitle": "Slow breathing with Psalm 46:10",
+    "dimension": "spiritual",
+    "minutes": 3,
+    "kind": "breathing",
+    "summary": "Pair slow, steady breathing with a short line of Scripture to calm your body and center your heart on God.",
+    "steps": [
+      "Sit comfortably and let your shoulders drop.",
+      "Breathe in gently through your nose for 4 seconds, praying, “Be still…”",
+      "Breathe out slowly for 6 seconds, praying, “…and know that I am God.”",
+      "Continue for a few minutes. When your mind wanders, gently return to the words."
+    ],
+    "prompts": [],
+    "checklist": [],
+    "reference": "Psalm 46:10",
+    "verse": "Be still and know that I am God",
+    "evidence": "Slow breathing at around six breaths per minute is associated with greater heart-rate variability, relaxation, and lower anxiety.",
+    "evidenceLevel": "moderate",
+    "citations": [
+      "zaccaro2018"
+    ],
+    "needs": [
+      "anxiety",
+      "stress",
+      "rumination",
+      "spiritualDryness",
+      "sleep"
+    ],
+    "breathing": {
+      "inhale": 4,
+      "topUp": 0,
+      "holdIn": 0,
+      "exhale": 6,
+      "holdOut": 0,
+      "inhaleCue": "Be still…",
+      "exhaleCue": "…and know that I am God."
+    }
+  },
+  {
+    "id": "cyclic-sighing",
+    "title": "Cyclic Sighing",
+    "subtitle": "A double inhale and a long, slow exhale",
+    "dimension": "emotional",
+    "minutes": 5,
+    "kind": "breathing",
+    "summary": "An exhale-focused breathing pattern that quickly settles your nervous system. Remember that every breath is a gift from God.",
+    "steps": [
+      "Breathe in through your nose until your lungs are nearly full.",
+      "Take a second, shorter sip of air to fill them completely.",
+      "Exhale slowly and fully through your mouth — make the exhale longer than the inhales.",
+      "Repeat for about five minutes, at a relaxed pace."
+    ],
+    "prompts": [],
+    "checklist": [],
+    "reference": "Genesis 2:7",
+    "verse": "the LORD God formed man from the dust of the ground and breathed the breath of life into his nostrils, and the man became a living being.",
+    "evidence": "In a one-month randomized study, five minutes a day of cyclic sighing improved positive mood more than mindfulness meditation and reduced breathing rate.",
+    "evidenceLevel": "moderate",
+    "citations": [
+      "balban2023"
+    ],
+    "needs": [
+      "anxiety",
+      "stress",
+      "overwhelm",
+      "anger"
+    ],
+    "breathing": {
+      "inhale": 3,
+      "topUp": 1,
+      "holdIn": 0,
+      "exhale": 6,
+      "holdOut": 0,
+      "inhaleCue": "Breathe in…",
+      "exhaleCue": "Long, slow breath out…"
+    }
+  },
+  {
+    "id": "three-good-things",
+    "title": "Three Good Things",
+    "subtitle": "A gratitude journal for tonight",
+    "dimension": "emotional",
+    "minutes": 10,
+    "kind": "journal",
+    "summary": "Write down three things that went well today and why. It trains your attention to notice God's kindness.",
+    "steps": [
+      "Think back over your day.",
+      "Write down three things that went well — big or small.",
+      "For each one, write why it happened or what it meant to you.",
+      "Thank God for each one."
+    ],
+    "prompts": [
+      "First good thing — and why it happened:",
+      "Second good thing — and why it happened:",
+      "Third good thing — and why it happened:"
+    ],
+    "checklist": [],
+    "reference": "Psalm 103:2",
+    "verse": "Bless the LORD, O my soul, and do not forget all His kind deeds",
+    "evidence": "Writing down three things that went well each day, and why, increased happiness and reduced depressive symptoms for up to six months in a randomized trial.",
+    "evidenceLevel": "strong",
+    "citations": [
+      "seligman2005",
+      "emmons2003"
+    ],
+    "needs": [
+      "lowMood",
+      "rumination",
+      "spiritualDryness"
+    ]
+  },
+  {
+    "id": "gratitude-letter",
+    "title": "Gratitude Letter",
+    "subtitle": "Thank someone who made a difference",
+    "dimension": "social",
+    "minutes": 15,
+    "kind": "journal",
+    "summary": "Write a letter to someone you have never properly thanked. Share it with them if you can.",
+    "steps": [
+      "Think of someone whose kindness changed your life.",
+      "Write to them specifically: what they did and how it affected you.",
+      "If you can, deliver it in person or read it to them.",
+      "Pray a blessing over them."
+    ],
+    "prompts": [
+      "Dear …",
+      "What you did for me:",
+      "How it changed my life:"
+    ],
+    "checklist": [],
+    "reference": "Philippians 1:3",
+    "verse": "I thank my God every time I remember you.",
+    "evidence": "Writing and delivering a gratitude letter produced one of the largest short-term boosts in happiness in a randomized trial, strongest over the following month.",
+    "evidenceLevel": "strong",
+    "citations": [
+      "seligman2005"
+    ],
+    "needs": [
+      "lowMood",
+      "loneliness"
+    ]
+  },
+  {
+    "id": "acts-of-kindness",
+    "title": "Acts of Kindness",
+    "subtitle": "Plan a few kind acts for one day",
+    "dimension": "social",
+    "minutes": 10,
+    "kind": "checklist",
+    "summary": "Choose a day and plan a few intentional acts of kindness. Love in action blesses the giver, too.",
+    "steps": [
+      "Pick a day this week.",
+      "Plan up to five kind acts — simple is fine.",
+      "Do them, and notice how you feel.",
+      "Thank God for the chance to love others."
+    ],
+    "prompts": [],
+    "checklist": [
+      "Encourage someone with a specific compliment",
+      "Help with a task without being asked",
+      "Write a thank-you note",
+      "Give something away",
+      "Pray for someone and let them know"
+    ],
+    "reference": "Acts 20:35",
+    "verse": "It is more blessed to give than to receive.",
+    "evidence": "Performing acts of kindness reliably increases the giver's well-being; several acts in a single day may give a bigger boost than spreading them out.",
+    "evidenceLevel": "strong",
+    "citations": [
+      "curry2018",
+      "lyubomirsky2005",
+      "dunn2008"
+    ],
+    "needs": [
+      "lowMood",
+      "loneliness",
+      "lowMeaning"
+    ]
+  },
+  {
+    "id": "savoring-walk",
+    "title": "Savoring Walk",
+    "subtitle": "Taste and see what is good",
+    "dimension": "emotional",
+    "minutes": 15,
+    "kind": "timer",
+    "summary": "Take a short walk and deliberately notice and linger on good things — light, color, sound, kindness.",
+    "steps": [
+      "Walk somewhere pleasant, at an easy pace.",
+      "Look for as many good things as you can: beauty, warmth, small joys.",
+      "When you notice one, pause and let yourself enjoy it.",
+      "Thank God for each gift you notice."
+    ],
+    "prompts": [],
+    "checklist": [],
+    "reference": "Psalm 34:8",
+    "verse": "Taste and see that the LORD is good",
+    "evidence": "Savoring — noticing and lingering on positive moments — is linked to greater happiness; a daily savoring walk raised happiness in a study of students.",
+    "evidenceLevel": "moderate",
+    "citations": [
+      "bryant2007"
+    ],
+    "needs": [
+      "lowMood",
+      "stress",
+      "rumination"
+    ]
+  },
+  {
+    "id": "best-possible-self",
+    "title": "Best Possible Self",
+    "subtitle": "Write a hopeful vision",
+    "dimension": "purpose",
+    "minutes": 15,
+    "kind": "journal",
+    "summary": "Imagine your life in the future after things have gone as well as they reasonably could, and write it down with God's purposes in mind.",
+    "steps": [
+      "Picture yourself a few years from now, after things have gone well.",
+      "Write about your relationships, faith, work, and health in that future.",
+      "Be realistic and hopeful — this is about what could be, by God's grace.",
+      "Note one small step you could take toward it this week."
+    ],
+    "prompts": [
+      "In my best possible future…",
+      "One small step I can take this week:"
+    ],
+    "checklist": [],
+    "reference": "Habakkuk 2:2",
+    "verse": "Write down this vision and clearly inscribe it on tablets",
+    "evidence": "Writing about your best possible future self increases optimism and positive mood, supported by a meta-analysis of optimism interventions.",
+    "evidenceLevel": "strong",
+    "citations": [
+      "king2001",
+      "sheldon2006",
+      "malouff2017"
+    ],
+    "needs": [
+      "lowMeaning",
+      "lowMood"
+    ]
+  },
+  {
+    "id": "self-compassion-break",
+    "title": "Self-Compassion Break",
+    "subtitle": "Receive the gentleness of Jesus",
+    "dimension": "emotional",
+    "minutes": 5,
+    "kind": "guided",
+    "summary": "Meet your own pain with the kindness Jesus shows you, instead of harsh self-criticism.",
+    "steps": [
+      "Name it honestly: “This is a moment of suffering.” Jesus noticed pain, too.",
+      "Remember you are not alone: “Others feel this way. Struggle is part of being human.”",
+      "Place a hand over your heart and pray: “Lord, help me be as gentle with myself as You are with me.”",
+      "Ask: “What would Jesus say to me right now?” Let yourself hear it."
+    ],
+    "prompts": [],
+    "checklist": [],
+    "reference": "Matthew 11:28",
+    "verse": "Come to Me, all you who are weary and burdened, and I will give you rest.",
+    "evidence": "Self-compassion training reduces anxiety, depression, and stress and increases life satisfaction across randomized trials.",
+    "evidenceLevel": "strong",
+    "citations": [
+      "neff2013",
+      "ferrari2019"
+    ],
+    "needs": [
+      "selfCriticism",
+      "lowMood",
+      "anxiety"
+    ]
+  },
+  {
+    "id": "move-your-body",
+    "title": "Move Your Body",
+    "subtitle": "A walk, a stretch, a dance",
+    "dimension": "physical",
+    "minutes": 20,
+    "kind": "timer",
+    "summary": "Get your body moving at a pace that feels good. Caring for your body honors the One who made it.",
+    "steps": [
+      "Choose any movement you enjoy — walking is great.",
+      "Aim for a comfortable effort where you can still talk.",
+      "If you can, go outside.",
+      "Afterward, notice how your mood and energy have changed."
+    ],
+    "prompts": [],
+    "checklist": [],
+    "reference": "1 Corinthians 6:19",
+    "verse": "Do you not know that your body is a temple of the Holy Spirit who is in you, whom you have received from God?",
+    "evidence": "Physical activity, including walking, meaningfully reduces symptoms of depression and anxiety. Adults are advised to get 150–300 minutes of moderate activity each week.",
+    "evidenceLevel": "strong",
+    "citations": [
+      "singh2023",
+      "noetel2024",
+      "bull2020"
+    ],
+    "needs": [
+      "lowMood",
+      "lowEnergy",
+      "anxiety",
+      "stress"
+    ]
+  },
+  {
+    "id": "consider-the-lilies",
+    "title": "Consider the Lilies",
+    "subtitle": "Time in God's creation",
+    "dimension": "physical",
+    "minutes": 20,
+    "kind": "timer",
+    "summary": "Spend unhurried time outdoors — a park, a garden, the sky — noticing God's care in creation.",
+    "steps": [
+      "Find a green or open space, even a small one.",
+      "Slow down and notice plants, birds, sky, and light.",
+      "Remember Jesus' words: your Father cares for these — and for you.",
+      "Leave your phone in your pocket if you can."
+    ],
+    "prompts": [],
+    "checklist": [],
+    "reference": "Matthew 6:28",
+    "verse": "Consider how the lilies of the field grow",
+    "evidence": "People who spend at least 120 minutes a week in nature are more likely to report good health and well-being, and a nature walk reduced rumination compared with an urban walk.",
+    "evidenceLevel": "moderate",
+    "citations": [
+      "white2019",
+      "bratman2015"
+    ],
+    "needs": [
+      "rumination",
+      "stress",
+      "anxiety",
+      "lowMood"
+    ]
+  },
+  {
+    "id": "reach-out",
+    "title": "Reach Out",
+    "subtitle": "Connect with someone today",
+    "dimension": "social",
+    "minutes": 5,
+    "kind": "guided",
+    "summary": "Send a message, make a call, or plan a visit with someone you trust. You were not made to do life alone.",
+    "steps": [
+      "Think of one person you trust or miss.",
+      "Send a short message, call, or invite them to meet.",
+      "If you're struggling, tell them honestly — let them carry some of the weight.",
+      "Thank God for the people He has given you."
+    ],
+    "prompts": [],
+    "checklist": [],
+    "reference": "Ecclesiastes 4:9",
+    "verse": "Two are better than one",
+    "evidence": "Strong social relationships are linked to a 50% greater likelihood of survival over time, an effect comparable to quitting smoking.",
+    "evidenceLevel": "strong",
+    "citations": [
+      "holtlunstad2010",
+      "waldinger2023"
+    ],
+    "needs": [
+      "loneliness",
+      "lowMood",
+      "grief"
+    ]
+  },
+  {
+    "id": "sleep-wind-down",
+    "title": "Sleep Wind-Down",
+    "subtitle": "Hand the night to God",
+    "dimension": "physical",
+    "minutes": 15,
+    "kind": "checklist",
+    "summary": "A gentle routine to prepare your body and mind for rest.",
+    "steps": [
+      "Work through the checklist in the hour before bed.",
+      "Write tomorrow's worries down so your mind can let them go.",
+      "Pray Psalm 4:8 as you lie down."
+    ],
+    "prompts": [],
+    "checklist": [
+      "Keep a consistent bedtime and wake time",
+      "Dim the lights and put screens away 30–60 minutes before bed",
+      "Avoid caffeine late in the day",
+      "Write down tomorrow's worries and hand them to God",
+      "Pray Psalm 4:8 as you lie down"
+    ],
+    "reference": "Psalm 4:8",
+    "verse": "I will lie down and sleep in peace, for You alone, O LORD, make me dwell in safety.",
+    "evidence": "Adults need seven or more hours of sleep for good health. Consistent habits, such as a regular schedule and limiting late caffeine, support better sleep.",
+    "evidenceLevel": "moderate",
+    "citations": [
+      "watson2015",
+      "irish2015"
+    ],
+    "needs": [
+      "sleep",
+      "lowEnergy",
+      "anxiety"
+    ]
+  },
+  {
+    "id": "lament-writing",
+    "title": "Lament & Expressive Writing",
+    "subtitle": "Pour out your heart",
+    "dimension": "emotional",
+    "minutes": 15,
+    "kind": "journal",
+    "summary": "Write honestly about what you're feeling and why, the way the psalmists did. God can handle your honesty.",
+    "steps": [
+      "Set a timer for 15 minutes.",
+      "Write your deepest thoughts and feelings about what is troubling you — don't edit.",
+      "Tell God exactly how it feels, like the lament psalms do.",
+      "End by writing one thing you trust God with."
+    ],
+    "prompts": [
+      "What I'm feeling and why:",
+      "What I want to tell God:",
+      "One thing I trust You with:"
+    ],
+    "checklist": [],
+    "reference": "Psalm 62:8",
+    "verse": "Trust in Him at all times, O people; pour out your hearts before Him. God is our refuge.",
+    "evidence": "Writing about your deepest thoughts and feelings for about 15 minutes on a few occasions has small but reliable benefits for health and well-being.",
+    "evidenceLevel": "moderate",
+    "citations": [
+      "pennebaker1986",
+      "frattaroli2006"
+    ],
+    "needs": [
+      "grief",
+      "anger",
+      "rumination",
+      "overwhelm"
+    ]
+  },
+  {
+    "id": "scripture-meditation",
+    "title": "Scripture Meditation",
+    "subtitle": "Slowly savor a verse",
+    "dimension": "spiritual",
+    "minutes": 10,
+    "kind": "guided",
+    "summary": "Read a short passage slowly, repeat a phrase, and let it sink in — meditation the biblical way.",
+    "steps": [
+      "Read today's verse slowly, out loud if you can.",
+      "Read it again and notice a word or phrase that stands out.",
+      "Repeat that phrase quietly to yourself — the Hebrew word for meditate means to murmur.",
+      "Respond to God in prayer, then rest in silence for a minute."
+    ],
+    "prompts": [],
+    "checklist": [],
+    "reference": "Psalm 1:2",
+    "verse": "But his delight is in the Law of the LORD, and on His law he meditates day and night.",
+    "evidence": "Religiously integrated CBT, which includes reflecting on Scripture, was as effective as conventional CBT for depression in a randomized trial, and faith-adapted therapies work well for many believers.",
+    "evidenceLevel": "moderate",
+    "citations": [
+      "koenig2015",
+      "pearce2015",
+      "anderson2015"
+    ],
+    "needs": [
+      "spiritualDryness",
+      "rumination",
+      "anxiety"
+    ]
+  },
+  {
+    "id": "daily-examen",
+    "title": "Daily Examen",
+    "subtitle": "Review your day with God",
+    "dimension": "spiritual",
+    "minutes": 10,
+    "kind": "guided",
+    "summary": "A centuries-old prayer of reflection: notice God's presence, give thanks, and look ahead with hope.",
+    "steps": [
+      "Become aware of God's presence with you now.",
+      "Review your day with gratitude — what were the gifts?",
+      "Notice your emotions: what drew you toward God, and what pulled you away?",
+      "Choose one moment from the day and pray about it.",
+      "Look toward tomorrow and ask God for what you need."
+    ],
+    "prompts": [],
+    "checklist": [],
+    "reference": "Psalm 139:23–24",
+    "verse": "Search me, O God, and know my heart; test me and know my concerns. See if there is any offensive way in me; lead me in the way everlasting.",
+    "evidence": "The Examen combines gratitude and honest reflection — practices linked with greater well-being.",
+    "evidenceLevel": "emerging",
+    "citations": [
+      "emmons2003"
+    ],
+    "needs": [
+      "spiritualDryness",
+      "lowMeaning",
+      "rumination"
+    ]
+  },
+  {
+    "id": "one-small-step",
+    "title": "One Small Step",
+    "subtitle": "Act first; feelings often follow",
+    "dimension": "mental",
+    "minutes": 10,
+    "kind": "guided",
+    "summary": "When you feel low, choose one small, meaningful activity and do it — even before you feel like it.",
+    "steps": [
+      "Pick one small activity that matters to you: a walk, a call, tidying a corner, a hobby.",
+      "Make it tiny — 5 to 10 minutes.",
+      "Do it, even if you don't feel like it yet. Motivation often follows action.",
+      "Notice how you feel afterward. Rest and food count, too — just ask Elijah."
+    ],
+    "prompts": [],
+    "checklist": [],
+    "reference": "1 Kings 19:7",
+    "verse": "Get up and eat, or the journey will be too much for you.",
+    "evidence": "Behavioral activation — scheduling small, meaningful activities — is an effective, well-established treatment for depression.",
+    "evidenceLevel": "strong",
+    "citations": [
+      "ekers2014",
+      "cuijpers2007"
+    ],
+    "needs": [
+      "lowMood",
+      "lowEnergy",
+      "lowMeaning",
+      "overwhelm"
+    ]
+  },
+  {
+    "id": "use-your-gifts",
+    "title": "Use Your Gifts",
+    "subtitle": "A strength in a new way",
+    "dimension": "purpose",
+    "minutes": 10,
+    "kind": "journal",
+    "summary": "Identify one of your God-given strengths and use it in a new way today.",
+    "steps": [
+      "Name a strength others see in you (kindness, creativity, courage, humor, wisdom…).",
+      "Choose a new way to use it today, especially to serve someone.",
+      "Do it.",
+      "Reflect on how it felt to use what God has given you."
+    ],
+    "prompts": [
+      "One of my strengths is…",
+      "A new way I'll use it today:",
+      "How it went:"
+    ],
+    "checklist": [],
+    "reference": "Romans 12:6",
+    "verse": "We have different gifts according to the grace given us.",
+    "evidence": "Using a signature strength in a new way each day for a week increased happiness and reduced depressive symptoms for six months in a randomized trial.",
+    "evidenceLevel": "strong",
+    "citations": [
+      "seligman2005"
+    ],
+    "needs": [
+      "lowMeaning",
+      "lowMood",
+      "selfCriticism"
+    ]
+  },
+  {
+    "id": "forgiveness-reach",
+    "title": "Forgiveness Steps",
+    "subtitle": "The REACH model with Christ",
+    "dimension": "social",
+    "minutes": 15,
+    "kind": "guided",
+    "summary": "A structured, research-based path toward releasing resentment — without excusing harm or ignoring safety.",
+    "steps": [
+      "Recall the hurt honestly, without minimizing it.",
+      "Empathize: try to understand what might have been going on for the other person — this is not excusing it.",
+      "Altruistic gift: remember a time you were forgiven, and consider offering forgiveness as a gift.",
+      "Commit: write a note to yourself about your decision to begin forgiving.",
+      "Hold on: when the memory returns, remember your decision. Forgiveness is not reconciliation, and if you are unsafe, your safety comes first."
+    ],
+    "prompts": [],
+    "checklist": [],
+    "reference": "Colossians 3:13",
+    "verse": "Bear with one another and forgive any complaint you may have against someone else. Forgive as the Lord forgave you.",
+    "evidence": "Structured forgiveness interventions increase forgiveness and hope and reduce depression and anxiety, according to a meta-analysis.",
+    "evidenceLevel": "strong",
+    "citations": [
+      "wade2014"
+    ],
+    "needs": [
+      "anger",
+      "rumination"
+    ]
+  },
+  {
+    "id": "sabbath-pause",
+    "title": "Sabbath Pause",
+    "subtitle": "Rest as a rhythm, not a reward",
+    "dimension": "spiritual",
+    "minutes": 30,
+    "kind": "timer",
+    "summary": "Set aside unhurried time to stop working, rest, and enjoy God and the people you love.",
+    "steps": [
+      "Choose a block of time to stop work and productivity.",
+      "Do something restful and life-giving — a walk, a meal with friends, worship, a nap.",
+      "Put away work messages if you can.",
+      "Thank God that your worth isn't measured by your output."
+    ],
+    "prompts": [],
+    "checklist": [],
+    "reference": "Mark 2:27",
+    "verse": "The Sabbath was made for man, not man for the Sabbath.",
+    "evidence": "Mentally detaching from work and enjoying restful activities during time off is linked with better well-being and less exhaustion.",
+    "evidenceLevel": "moderate",
+    "citations": [
+      "sonnentag2007"
+    ],
+    "needs": [
+      "overwhelm",
+      "stress",
+      "lowEnergy"
+    ]
+  },
+  {
+    "id": "grounding-54321",
+    "title": "5-4-3-2-1 Grounding",
+    "subtitle": "Come back to the present moment",
+    "dimension": "emotional",
+    "minutes": 3,
+    "kind": "guided",
+    "summary": "When anxiety or panic surges, use your senses to anchor yourself in the present, where God is with you.",
+    "steps": [
+      "Name 5 things you can see.",
+      "Name 4 things you can feel.",
+      "Name 3 things you can hear.",
+      "Name 2 things you can smell.",
+      "Name 1 thing you can taste — and one truth: God is with you right now."
+    ],
+    "prompts": [],
+    "checklist": [],
+    "reference": "Psalm 46:1",
+    "verse": "God is our refuge and strength, an ever-present help in times of trouble.",
+    "evidence": "Grounding is a widely used clinical coping skill that anchors attention in the present; it draws on the same attention-training principles as mindfulness, which reduces anxiety.",
+    "evidenceLevel": "emerging",
+    "citations": [
+      "khoury2013",
+      "goyal2014"
+    ],
+    "needs": [
+      "anxiety",
+      "overwhelm"
+    ]
+  }
+]

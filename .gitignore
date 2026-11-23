@@ -1,0 +1,19 @@
+# Build products
+build/
+DerivedData/
+.build/
+*.xcresult
+*.ipa
+*.xcarchive
+
+# Reference data downloaded by Tools/validate_content.py
+.content-cache/
+
+# Xcode user state
+xcuserdata/
+*.xcuserstate
+.swiftpm/
+Packages/RenewedMindKit/.swiftpm/
+
+# macOS
+.DS_Store
