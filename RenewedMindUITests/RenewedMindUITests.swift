@@ -195,6 +195,8 @@ final class RenewedMindUITests: XCTestCase {
         XCTAssertTrue(usedOnDevice || source.label.lowercased().contains("offline"), "unexpected source: \(source.label)")
         XCTContext.runActivity(named: "Reflection source: \(usedOnDevice ? "on-device model" : "offline fallback") — \(source.label)") { _ in }
         print("REFLECTION SOURCE: \(source.label)")
+        let detail = element("result.errorDetail")
+        if detail.exists { print("REFLECTION ERROR DETAIL: \(detail.label)") }
         snap("23-OnDevice-Source")
     }
 

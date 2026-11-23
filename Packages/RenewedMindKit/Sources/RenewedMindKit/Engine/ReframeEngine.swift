@@ -30,6 +30,8 @@ public struct ReframeResult: Codable, Hashable, Sendable {
     public var concerns: [Concern]
     /// A short note shown to the person, e.g. why AI wasn't used.
     public var notice: String?
+    /// Technical detail of an AI failure, for diagnostics (not shown to people in normal use).
+    public var errorDetail: String?
 
     public init(source: ReframeSource, modelID: String? = nil, crisisLevel: CrisisLevel, validation: String,
                 distortions: [DetectedDistortion], questions: [String], balancedThought: String,

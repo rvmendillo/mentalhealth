@@ -188,6 +188,12 @@ struct ReframeContentView: View {
             .foregroundStyle(.secondary)
             .accessibilityElement(children: .combine)
             .accessibilityIdentifier("result.source")
+            if model.isUITesting, let detail = result.errorDetail {
+                Text("Diagnostic: \(detail)")
+                    .font(.caption2)
+                    .foregroundStyle(.secondary)
+                    .accessibilityIdentifier("result.errorDetail")
+            }
         }
         .sheet(item: $showingDistortion) { distortion in
             NavigationStack {

@@ -311,6 +311,7 @@ final class ReframeCoordinatorTests: XCTestCase {
         XCTAssertEqual(r.source, .offline)
         XCTAssertNotNil(r.notice)
         XCTAssertTrue(r.notice!.contains("offline"))
+        XCTAssertEqual(r.errorDetail, String(reflecting: ClaudeError.overloaded))
     }
 
     func testUrgentCrisisNeverCallsAI() async throws {

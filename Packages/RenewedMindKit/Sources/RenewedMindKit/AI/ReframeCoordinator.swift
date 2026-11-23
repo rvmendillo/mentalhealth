@@ -61,6 +61,7 @@ public struct ReframeCoordinator: Sendable {
             var result = offline
             let reason = (error as? LocalizedError)?.errorDescription ?? "The AI guide wasn't available."
             result.notice = "\(reason) Showing the offline reflection instead."
+            result.errorDetail = String(reflecting: error)
             return result
         }
     }
