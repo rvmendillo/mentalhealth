@@ -18,9 +18,9 @@ final class RenewedMindUITests: XCTestCase {
     // MARK: Helpers
 
     @discardableResult
-    func launch(onboarded: Bool = true) -> XCUIApplication {
+    func launch(onboarded: Bool = true, extraArguments: [String] = []) -> XCUIApplication {
         let app = XCUIApplication()
-        app.launchArguments = ["-uiTesting", "-resetData"] + (onboarded ? ["-skipOnboarding"] : [])
+        app.launchArguments = ["-uiTesting", "-resetData"] + (onboarded ? ["-skipOnboarding"] : []) + extraArguments
         app.launch()
         self.app = app
         return app
@@ -166,6 +166,36 @@ final class RenewedMindUITests: XCTestCase {
         element("safety.moreOptions").tap()
         XCTAssertTrue(element("crisis.list").waitForExistence(timeout: 10))
         snap("09-Crisis-Resources")
+    }
+
+    /// Uses Apple's on-device model when the simulator offers it; otherwise the app must fall back
+    /// to the offline guide with a notice. Either way a complete reflection must appear.
+    func testOnDeviceReflectionOrGracefulFallback() {
+        launch(extraArguments: ["-onDeviceAI"])
+        tapTab("Renew")
+        let guide = element("renew.guideLabel")
+        XCTAssertTrue(guide.waitForExistence(timeout: 10))
+        let editor = element("renew.thought")
+        editor.tap()
+        editor.typeText("I'm so anxious about my exam tomorrow. What if I fail and disappoint everyone?")
+        dismissKeyboardIfNeeded()
+        let submit = element("renew.submit")
+        reveal(submit)
+        submit.tap()
+        let validation = element("result.validation")
+        XCTAssertTrue(validation.waitForExistence(timeout: 120))
+        XCTAssertFalse(validation.label.isEmpty)
+        let balanced = element("result.balanced")
+        reveal(balanced)
+        XCTAssertFalse(balanced.label.isEmpty)
+        snap("22-OnDevice-Reflection")
+        let source = element("result.source")
+        reveal(source)
+        let usedOnDevice = source.label.contains("Apple Intelligence")
+        XCTAssertTrue(usedOnDevice || source.label.lowercased().contains("offline"), "unexpected source: \(source.label)")
+        XCTContext.runActivity(named: "Reflection source: \(usedOnDevice ? "on-device model" : "offline fallback") — \(source.label)") { _ in }
+        print("REFLECTION SOURCE: \(source.label)")
+        snap("23-OnDevice-Source")
     }
 
     func testBreathPrayerSessionAndFeedback() {

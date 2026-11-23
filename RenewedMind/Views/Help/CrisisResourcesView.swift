@@ -97,7 +97,7 @@ struct CrisisLineRow: View {
         VStack(alignment: .leading, spacing: 8) {
             Text(line.name).font(.headline)
             Text(line.detail).font(.subheadline).foregroundStyle(.secondary)
-            HStack(spacing: 10) {
+            FlowLayout(spacing: 10) {
                 if let url = line.phoneURL {
                     Link(destination: url) { Label("Call", systemImage: "phone.fill") }
                         .buttonStyle(SecondaryButtonStyle(color: Palette.rose))

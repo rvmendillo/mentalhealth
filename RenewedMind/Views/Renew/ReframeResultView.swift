@@ -186,6 +186,7 @@ struct ReframeContentView: View {
             }
             .font(.caption)
             .foregroundStyle(.secondary)
+            .accessibilityElement(children: .combine)
             .accessibilityIdentifier("result.source")
         }
         .sheet(item: $showingDistortion) { distortion in

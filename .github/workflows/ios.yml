@@ -192,6 +192,7 @@ jobs:
             -only-testing:RenewedMindUITests/RenewedMindUITests/testRenewThoughtProducesReframeAndSaves \
             -only-testing:RenewedMindUITests/RenewedMindUITests/testBreathPrayerSessionAndFeedback \
             -only-testing:RenewedMindUITests/RenewedMindUITests/testSettingsHelpAndScience \
+            -only-testing:RenewedMindUITests/RenewedMindUITests/testOnDeviceReflectionOrGracefulFallback \
             2>&1 | tee build/test18.log | grep -E "error:|Test Case|Executed|\*\* TEST" || true
           grep -q "\*\* TEST SUCCEEDED \*\*" build/test18.log
 

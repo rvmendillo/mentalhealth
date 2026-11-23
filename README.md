@@ -27,13 +27,13 @@ The IPA from CI is **unsigned**. To install it on your iPhone, re-sign it with y
 
 ## Build from source
 
-Requirements: macOS with Xcode 26 and [XcodeGen](https://github.com/yonaskolb/XcodeGen).
+Requirements: macOS with Xcode 26.
 
 ```sh
-brew install xcodegen
-xcodegen generate
 open RenewedMind.xcodeproj
 ```
+
+The Xcode project is generated from `project.yml` with [XcodeGen](https://github.com/yonaskolb/XcodeGen). After changing `project.yml`, regenerate it with `brew install xcodegen && xcodegen generate`.
 
 ## Tests
 

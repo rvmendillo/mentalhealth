@@ -27,7 +27,7 @@ struct RenewedMindApp: App {
             if arguments.contains("-skipOnboarding") && !model.data.profile.hasCompletedOnboarding {
                 model.completeOnboarding(name: "Grace")
             }
-            model.setAIMode(.offline)
+            model.setAIMode(arguments.contains("-onDeviceAI") ? .onDevice : .offline)
         }
         _model = StateObject(wrappedValue: model)
     }
